@@ -85,7 +85,7 @@ void Mandelbrot::generate(int maxIterations, unsigned int ty, unsigned int heigh
                 } else if (iteration < 4096) {
                   color = sf::Color(255, (((iteration - 2048) * 63) / 2047) + 192, 0);
                 } else {
-                  color = sf::Color(255, 255, 0);
+                  color = sf::Color(iteration, iteration, 0);
                 }
 
                 plot(x, y, color);

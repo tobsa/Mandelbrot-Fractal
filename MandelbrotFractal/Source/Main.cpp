@@ -47,8 +47,7 @@ int main()
 
         renderWindow.clear();
 
-        for(int i = 0; i < 1; i++)
-            renderWindow.draw(mandelbrot, sf::BlendAdd);
+        renderWindow.draw(mandelbrot);
 
         renderWindow.display();
     }
